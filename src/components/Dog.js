@@ -1,12 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Dog() {
-  const dog = {
-    name: 'spot',
-    age: 10,
-    weight: '50lbs'
-  };
-
+const Dog = ({ dog }) => {
   const fields = Object.keys(dog)
     .map(key => {
       return (
@@ -22,4 +17,14 @@ export default function Dog() {
       {fields}
     </dl>
   );
-}
+};
+
+Dog.propTypes = {
+  dog: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    weight: PropTypes.string.isRequired
+  }),
+};
+
+export default Dog;
