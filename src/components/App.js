@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './Header';
-import Dog from './Dog';
+import Color from './Color';
 
 export default function App() {
   return (
     <>
       <Header />
-      <Dog />
+      <Color />
     </>
   );
 }
