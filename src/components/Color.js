@@ -16,15 +16,13 @@ export default function Color() {
       <dl>
         <dt>Name</dt>
         <dd>{color.name}</dd>
-
-        <dl>RGB
-          <dt>Red</dt>
-          <dd>{color.rgb.red}</dd>
-          <dt>Green</dt>
-          <dd>{color.rgb.green}</dd>
-          <dt>Blue</dt>
-          <dd>{color.rgb.blue}</dd>
-        </dl>
+        
+        <dt>RGB</dt>
+        <dd>
+          <p>red: {color.rgb.red}</p>
+          <p>green: {color.rgb.green}</p>
+          <p>blue: {color.rgb.blue}</p>
+        </dd>
 
         <dt>Hex</dt>
         <dd>{color.hex}</dd>
