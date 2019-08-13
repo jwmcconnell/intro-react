@@ -11,11 +11,22 @@ export default function Color() {
     hex: '#FF0000'
   };
 
+  const styles = {
+    backgroundColor: color.hex,
+    width: '1rem',
+    height: '1rem',
+    display: 'inline-block',
+    marginLeft: '1rem'
+  };
+
   return (
     <>
       <dl>
         <dt>Name</dt>
-        <dd>{color.name}</dd>
+        <dd style={{ color: 'red' }}>
+          {color.name}
+          <div style={styles}></div>
+        </dd>
         
         <dt>RGB</dt>
         <dd>
